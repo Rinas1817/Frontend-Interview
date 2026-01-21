@@ -1,27 +1,53 @@
-## CA Monk Blog Application
+# CA Monk Blog Application
 
 This project was built as part of the CA Monk internship assignment.  
-The goal was to demonstrate practical usage of React, TypeScript, and TanStack Query while building a clean, usable blog interface.
+The objective was to create a standalone blog application while demonstrating practical usage of React, TypeScript, and TanStack Query.
 
-### Features
-- Fetch and display a list of blogs
-- View blog details in a split layout
-- Create new blogs using a simple form
-- Loading and error states handled with TanStack Query
-- Responsive layout for mobile and desktop
 
-### Tech Stack
+
+## Overview
+
+The application displays a list of blogs and allows users to view detailed content in a two-panel layout.  
+Users can also create new blogs using a simple form, with the blog list updating automatically after creation.
+
+The backend is powered by JSON Server and runs locally.
+
+
+## Features
+
+- Fetch and display all blogs from the backend
+- View individual blog details in a split-panel layout
+- Create new blogs using a clean, simple form
+- Automatic data refetching after blog creation
+- Loading and error states handled using TanStack Query
+- Responsive layout for both mobile and desktop screens
+
+
+## Tech Stack
+
 - React + TypeScript
-- TanStack Query
-- Tailwind CSS
-- shadcn/ui
-- JSON Server
+- TanStack Query for server-state management
+- Tailwind CSS for styling
+- shadcn/ui for reusable UI components
+- JSON Server for the mock backend API
 
-### Notes
-- Blog content is rendered as plain text as required.
-- The layout was kept intentionally simple to focus on readability and maintainability.
 
-### Running the project
-npm install  
-npm run server  
-npm run dev
+## Project Structure
+
+The structure is kept simple to separate concerns and keep the codebase easy to understand and maintain.
+
+
+
+## Notes on Implementation
+
+- Blog content is rendered as plain text, as required by the assignment.
+- Cover images are handled using public image URLs to match the provided API structure.
+- TanStack Query is configured at the application root to manage server state consistently.
+
+
+## Running the Project
+
+Install dependencies:
+1.npm install
+2.npm run server
+3.npm run dev
